@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cardápio · Mareyki</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="cardapio-animation.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Mareyki, início"
+        ><img
+          src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/marca.webp"
+          alt="Mareyki Cocina Peruana"
+          width="369"
+          height="333" /></a
+      ><button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navegacao"
+        hidden
+      >
+        Menu ☰
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="index.html">Início</a
+        ><a href="index.html#essencia">Nossa essência</a
+        ><a href="cardapio.html" aria-current="page">Cardápio</a
+        ><a href="index.html#contato">Contato</a>
+      </nav>
+      <a
+        class="header-delivery"
+        href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+        target="_blank"
+        rel="noopener noreferrer"
+        >iFood ↗</a
+      >
+    </header>
+    <main id="conteudo">
+      <section class="menu-hero">
+        <div class="menu-sea" aria-hidden="true">
+          <div class="menu-wave"></div>
+          <div class="menu-wave"></div>
+          <div class="menu-fish school-0"><i></i><i></i><i></i></div>
+          <div class="menu-fish school-1"><i></i><i></i><i></i></div>
+          <div class="menu-fish school-2"><i></i><i></i><i></i></div>
+        </div>
+        <div class="wrap">
+          <a href="index.html">← Voltar ao início</a>
+          <p class="eyebrow">Mareyki Cocina Peruana</p>
+          <h1 id="mareyki-teeth" aria-label="Cardápio">
+            <span class="teeth-title-text" aria-hidden="true">Cardápio.</span
+            ><canvas aria-hidden="true"></canvas>
+          </h1>
+          <p>
+            Escolha um item para ver os detalhes. Preços e disponibilidade podem
+            variar no iFood.
+          </p>
+          <a
+            class="button dark"
+            href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Pedir no iFood ↗</a
+          >
+        </div>
+      </section>
+      <div class="wrap menu-catalog">
+        <div class="filters" role="group" aria-label="Categorias">
+          <button type="button" data-menu-filter="Tudo" aria-pressed="true">
+            Tudo</button
+          ><button
+            type="button"
+            data-menu-filter="Ceviches"
+            aria-pressed="false"
+          >
+            Ceviches</button
+          ><button type="button" data-menu-filter="Combos" aria-pressed="false">
+            Combos</button
+          ><button
+            type="button"
+            data-menu-filter="Chicharrón"
+            aria-pressed="false"
+          >
+            Chicharrón</button
+          ><button type="button" data-menu-filter="Arroz" aria-pressed="false">
+            Arroz</button
+          ><button
+            type="button"
+            data-menu-filter="Tallarín"
+            aria-pressed="false"
+          >
+            Tallarín</button
+          ><button
+            type="button"
+            data-menu-filter="Executivos"
+            aria-pressed="false"
+          >
+            Executivos</button
+          ><button
+            type="button"
+            data-menu-filter="Bebidas"
+            aria-pressed="false"
+          >
+            Bebidas
+          </button>
+        </div>
+        <dialog class="dish-stage" id="prato" aria-labelledby="dish-name">
+          <form method="dialog">
+            <button class="dish-close" autofocus aria-label="Fechar detalhes">
+              ×
+            </button>
+          </form>
+          <div class="dish-detail">
+            <div class="dish-visual">
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/0.webp"
+                alt="Ceviche Mixto"
+              />
+            </div>
+            <div class="dish-copy">
+              <p class="eyebrow">Detalhes do cardápio</p>
+              <h2 id="dish-name">Ceviche Mixto</h2>
+              <p class="dish-description">
+                Peixe fresco do dia, camarão e lula marinados em limão, pimenta
+                e coentro, com milho tostado.
+              </p>
+              <strong class="dish-price">R$ 99,90</strong>
+              <p>
+                <a
+                  class="button"
+                  href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ver no iFood ↗</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="dish-controls">
+            <button type="button" data-step="-1" aria-label="Item anterior">
+              ←</button
+            ><span class="dish-count" aria-live="polite"></span
+            ><button type="button" data-step="1" aria-label="Próximo item">
+              →
+            </button>
+          </div>
+        </dialog>
+        <section data-menu-category="Ceviches">
+          <h2>Ceviches</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/0.webp"
+              data-description="Peixe fresco do dia, camarão e lula marinados em limão, pimenta e coentro, com milho tostado."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/0.webp"
+                alt=""
+                loading="lazy"
+              /><span>Ceviche Mixto<strong>R$ 99,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/1.webp"
+              data-description="Peixe fresco do dia marinado em limão, pimenta e coentro, com milho tostado."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/1.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Ceviche Clásico de Pescado Personal<strong
+                  >R$ 80,90</strong
+                ></span
+              >
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Combos">
+          <h2>Combos</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/2.webp"
+              data-description="Fanta 350 ml à escolha e copo colecionável de brinde. Consulte disponibilidade."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/2.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Combo Halloween · Chaufa<strong
+                  >A partir de R$ 58,90</strong
+                ></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/3.webp"
+              data-description="Fanta 350 ml à escolha e copo colecionável de brinde. Consulte disponibilidade."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/3.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Combo Halloween · Salteados<strong
+                  >A partir de R$ 77,90</strong
+                ></span
+              >
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Chicharrón">
+          <h2>Chicharrón</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/4.webp"
+              data-description="Camarão frito com molho da casa."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/4.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Camarón G<strong>R$ 129,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/5.webp"
+              data-description="Camarão frito com molho da casa."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/5.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Camarón M<strong>R$ 82,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/6.webp"
+              data-description="Peixe fresco do dia frito com molho da casa."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/6.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Pescado G<strong>R$ 109,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/7.webp"
+              data-description="Peixe fresco do dia frito com molho da casa."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/7.webp"
+                alt=""
+                loading="lazy"
+              /><span>Chicharrón de Pescado M<strong>R$ 59,00</strong></span>
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Arroz">
+          <h2>Arroz</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/8.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/8.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Carne<strong>R$ 63,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/9.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/9.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Frango<strong>R$ 57,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/10.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/10.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Mariscos<strong>R$ 69,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/11.webp"
+              data-description="Arroz cremoso com frutos do mar, cebola crocante, coentro, páprica, ervilhas e um toque de leite de tigre, acompanhado de salada."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/11.webp"
+                alt=""
+                loading="lazy"
+              /><span>Arroz com Mariscos<strong>R$ 80,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Arroz Chaufa Misto<strong>R$ 63,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Chaufa Vegetariano<strong>R$ 51,90</strong></span>
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Tallarín">
+          <h2>Tallarín</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/14.webp"
+              data-description="Macarrão com carne ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/14.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Carne<strong>R$ 63,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/15.webp"
+              data-description="Macarrão com frango ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/15.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Frango<strong>R$ 57,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/16.webp"
+              data-description="Macarrão com frutos do mar ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/16.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Mariscos<strong>R$ 69,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description="Macarrão com carne e frango ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <span>Tallarín Saltado Misto<strong>R$ 63,90</strong></span>
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Executivos">
+          <h2>Executivos</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/18.webp"
+              data-description="Filé mignon salteado com cebola e tomate, acompanhado de arroz, batata, ovo frito e banana."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/18.webp"
+                alt=""
+                loading="lazy"
+              /><span>Lomo A Lo Pobre<strong>R$ 93,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/19.webp"
+              data-description="Filé mignon salteado na wok com cebola e tomate, acompanhado de batatas douradas."
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/19.webp"
+                alt=""
+                loading="lazy"
+              /><span>Lomo Saltado<strong>R$ 83,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Pollo Saltado<strong>R$ 70,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Mariscos Saltado<strong>R$ 80,90</strong></span>
+            </button>
+          </div>
+        </section>
+        <section data-menu-category="Bebidas">
+          <h2>Bebidas</h2>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/22.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/22.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Água mineral com gás 500 ml<strong>R$ 8,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/23.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/23.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Água mineral Crystal sem gás 500 ml<strong
+                  >R$ 8,90</strong
+                ></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/24.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/24.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Fanta Laranja 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/25.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/25.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Schweppes Citrus 350 ml<strong>R$ 8,93</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/26.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/26.webp"
+                alt=""
+                loading="lazy"
+              /><span>Sprite 350 ml<strong>R$ 9,52</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/27.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/27.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Schweppes Tônica 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/28.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/28.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Coca-Cola Zero 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/29.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/29.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Coca-Cola Original 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/30.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/30.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Sprite Lemon Fresh 600 ml<strong>R$ 10,32</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/31.webp"
+              data-description=""
+            >
+              <img
+                src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/31.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Fanta Ghost Face Punch 350 ml<strong>R$ 11,90</strong></span
+              >
+            </button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="restaurant-footer">
+      <div class="wrap footer-row">
+        <div>
+          <a class="footer-brand" href="index.html">Mareyki Cocina Peruana</a>
+          <address>
+            R. João Wagner Wey, 1652 · Jardim América<br />Sorocaba, SP ·
+            18046-525
+          </address>
+        </div>
+        <nav aria-label="Rodapé">
+          <a href="cardapio.html">Cardápio</a
+          ><a href="index.html#contato">Como chegar</a
+          ><a
+            href="https://www.instagram.com/mareykicocinaperuana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram ↗</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

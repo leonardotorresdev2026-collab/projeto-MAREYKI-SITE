@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Mareyki Cocina Peruana em Sorocaba. Explore o cardápio, conheça o restaurante e peça pelo iFood."
+    />
+    <title>Mareyki · Cocina Peruana</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header" id="inicio">
+      <a class="brand" href="index.html" aria-label="Mareyki, início"
+        ><img
+          src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/marca.webp"
+          alt="Mareyki Cocina Peruana"
+          width="369"
+          height="333"
+      /></a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="navegacao"
+        hidden
+      >
+        Menu <span aria-hidden="true">☰</span>
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="#inicio">Início</a><a href="#essencia">Nossa essência</a
+        ><a href="cardapio.html">Cardápio</a><a href="#contato">Contato</a>
+      </nav>
+      <a
+        class="header-delivery"
+        href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+        target="_blank"
+        rel="noopener noreferrer"
+        >iFood ↗</a
+      >
+    </header>
+    <main id="conteudo">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-stage">
+          <p class="eyebrow hero-kicker">
+            Cocina peruana <span></span> Sorocaba, SP
+          </p>
+          <h1 id="hero-title">Do mar ao <em>ceviche.</em></h1>
+          <div class="water-scene" aria-hidden="true">
+            <div class="fish-school"><i></i><i></i><i></i></div>
+            <div class="water-ripple"></div>
+            <div class="water-splash">
+              <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </div>
+          <img
+            class="hero-dish"
+            src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/ceviche.webp"
+            alt="Ceviche peruano com cebola roxa, milho e batata-doce"
+            width="900"
+            height="900"
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero-end">
+          <span class="hero-caption"><strong>Ceviche de peixe</strong></span
+          ><a class="button" href="cardapio.html"
+            >Ver cardápio <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+      <section class="essence section" id="essencia">
+        <div class="wrap editorial">
+          <div class="copy" data-reveal>
+            <p class="eyebrow">Nossa essência</p>
+            <h2>Da costa peruana<br />à mesa.</h2>
+            <p>
+              O frescor dos cítricos, a intensidade da wok e a cor dos
+              ingredientes dão o tom desta viagem pela cozinha peruana.
+            </p>
+          </div>
+          <div class="tour" data-reveal>
+            <div class="tour-frame">
+              <figure class="tour-slide current">
+                <img
+                  src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/interior.webp"
+                  alt="Interior do Mareyki com luminárias de palha e a marca azul na parede"
+                  width="1278"
+                  height="642"
+                  loading="lazy"
+                />
+                <figcaption>Interior</figcaption>
+              </figure>
+              <figure class="tour-slide">
+                <img
+                  src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/fachada.webp"
+                  alt="Fachada azul-turquesa do Mareyki"
+                  width="900"
+                  height="1260"
+                  loading="lazy"
+                />
+                <figcaption>Fachada</figcaption>
+              </figure>
+            </div>
+            <div class="tour-controls" hidden>
+              <button type="button" data-tour="0" aria-pressed="true">
+                Interior</button
+              ><button type="button" data-tour="1" aria-pressed="false">
+                Fachada
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flavors section" id="sabores">
+        <div class="wrap">
+          <div class="section-head" data-reveal>
+            <div>
+              <p class="eyebrow">Sabores do Peru</p>
+              <h2>Do cítrico à wok.</h2>
+            </div>
+            <a class="text-link" href="cardapio.html">Ver cardápio digital ↗</a>
+          </div>
+          <div class="food-grid">
+            <article data-reveal>
+              <div class="food-photo ceviche">
+                <img
+                  src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/ceviche.webp"
+                  alt="Ceviche peruano"
+                  width="900"
+                  height="900"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Ceviche</h3>
+              <p>Peixe, cítricos e cebola roxa.</p>
+            </article>
+            <article data-reveal>
+              <div class="food-photo">
+                <img
+                  src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/lomo.webp"
+                  alt="Lomo saltado com arroz e batatas"
+                  width="640"
+                  height="640"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Lomo saltado</h3>
+              <p>Clássico peruano salteado na wok.</p>
+            </article>
+            <article data-reveal>
+              <div class="food-photo">
+                <img
+                  src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/chaufa.webp"
+                  alt="Arroz chaufa com camarões"
+                  width="640"
+                  height="640"
+                  loading="lazy"
+                />
+              </div>
+              <h3>Chaufa de mariscos</h3>
+              <p>Arroz frito peruano com frutos do mar.</p>
+            </article>
+          </div>
+          <p class="note">Imagens ilustrativas dos pratos.</p>
+        </div>
+      </section>
+      <section class="menu-strip">
+        <div class="wrap section-head">
+          <div>
+            <p class="eyebrow">Cardápio digital</p>
+            <h2>Escolha por categoria.</h2>
+            <p>Explore ceviches, pratos na wok e bebidas.</p>
+          </div>
+          <a class="button dark" href="cardapio.html">Abrir cardápio ↗</a>
+        </div>
+      </section>
+      <section class="visit section" id="contato">
+        <div class="wrap editorial">
+          <div data-reveal>
+            <p class="eyebrow">Sorocaba, SP</p>
+            <h2>Visite o Mareyki.</h2>
+            <p>
+              <strong>Endereço</strong><br />R. João Wagner Wey, 1652 · Jardim
+              América<br />Sorocaba, SP · 18046-525<br /><small
+                >Consulte os horários no Google Maps.</small
+              >
+            </p>
+            <a
+              class="button dark"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Mareyki+Cocina+Peruana,+Rua+Joao+Wagner+Wey+1652,+Sorocaba"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Abrir no Google Maps ↗</a
+            >
+            <p class="social">
+              <a
+                href="https://www.instagram.com/mareykicocinaperuana/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram ↗</a
+              >
+            </p>
+          </div>
+          <div class="delivery" id="delivery" data-reveal>
+            <p class="eyebrow">Delivery</p>
+            <h3>Mareyki na sua casa.</h3>
+            <p>Escolha seus pratos no iFood e peça por lá.</p>
+            <img
+              class="delivery-dish"
+              src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/0.webp"
+              alt="Ceviche Mixto do Mareyki"
+              width="465"
+              height="350"
+              loading="lazy"
+            />
+            <p>
+              <a
+                class="button"
+                href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Pedir no iFood ↗</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="restaurant-footer">
+      <div class="wrap footer-row">
+        <div>
+          <a class="footer-brand" href="index.html">Mareyki Cocina Peruana</a>
+          <address>
+            R. João Wagner Wey, 1652 · Jardim América<br />Sorocaba, SP ·
+            18046-525
+          </address>
+        </div>
+        <nav aria-label="Rodapé">
+          <a href="cardapio.html">Cardápio</a
+          ><a href="index.html#contato">Como chegar</a
+          ><a
+            href="https://www.instagram.com/mareykicocinaperuana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram ↗</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
