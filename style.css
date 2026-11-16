@@ -1528,3 +1528,22 @@ body:has(.dish-stage[open]) {
     height: calc(100% + 90px);
   }
 }
+
+/* Seção separada: itens do iFood */
+.menu-catalog section#ifood {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid currentColor;
+}
+.ifood-note {
+  max-width: 60ch;
+  margin: 0 0 1.5rem;
+  opacity: 0.8;
+}
+.ifood-group {
+  margin-top: 1.75rem;
+}
+.ifood-group h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.15rem;
+}
