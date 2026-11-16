@@ -20,7 +20,655 @@
       ><button
         class="nav-toggle"
         type="button"
+        aria-expanded="false"<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Cardápio · Mareyki</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="cardapio-animation.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="header">
+      <a class="brand" href="index.html" aria-label="Mareyki, início"
+        ><img
+          src="https://mmnhykjclvgcdhcwdddx.supabase.co/storage/v1/object/public/MERAYKI%20SITE/marca.webp"
+          alt="Mareyki Cocina Peruana"
+          width="369"
+          height="333" /></a
+      ><button
+        class="nav-toggle"
+        type="button"
         aria-expanded="false"
+        aria-controls="navegacao"
+        hidden
+      >
+        Menu ☰
+      </button>
+      <nav id="navegacao" aria-label="Navegação principal">
+        <a href="index.html">Início</a
+        ><a href="index.html#essencia">Nossa essência</a
+        ><a href="cardapio.html" aria-current="page">Cardápio</a
+        ><a href="index.html#contato">Contato</a>
+      </nav>
+      <a
+        class="header-delivery"
+        href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+        target="_blank"
+        rel="noopener noreferrer"
+        >iFood ↗</a
+      >
+    </header>
+    <main id="conteudo">
+      <section class="menu-hero">
+        <div class="menu-sea" aria-hidden="true">
+          <div class="menu-wave"></div>
+          <div class="menu-wave"></div>
+          <div class="menu-fish school-0"><i></i><i></i><i></i></div>
+          <div class="menu-fish school-1"><i></i><i></i><i></i></div>
+          <div class="menu-fish school-2"><i></i><i></i><i></i></div>
+        </div>
+        <div class="wrap">
+          <a href="index.html">← Voltar ao início</a>
+          <p class="eyebrow">Mareyki Cocina Peruana</p>
+          <h1 id="mareyki-teeth" aria-label="Cardápio">
+            <span class="teeth-title-text" aria-hidden="true">Cardápio.</span
+            ><canvas aria-hidden="true"></canvas>
+          </h1>
+          <p>
+            Escolha um item para ver os detalhes. Estes são os preços do salão. Os itens e preços do iFood estão na seção No iFood, no fim da página.
+          </p>
+          <a
+            class="button dark"
+            href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Pedir no iFood ↗</a
+          >
+        </div>
+      </section>
+      <div class="wrap menu-catalog">
+        <div class="filters" role="group" aria-label="Categorias"><button type="button" data-menu-filter="Tudo" aria-pressed="true">Tudo</button><button type="button" data-menu-filter="Para começar" aria-pressed="false">Para começar</button><button type="button" data-menu-filter="Ceviches" aria-pressed="false">Ceviches</button><button type="button" data-menu-filter="Chaufas" aria-pressed="false">Chaufas</button><button type="button" data-menu-filter="Salteados" aria-pressed="false">Salteados</button><button type="button" data-menu-filter="Tallarín" aria-pressed="false">Tallarín</button><button type="button" data-menu-filter="Arroz" aria-pressed="false">Arroz</button><button type="button" data-menu-filter="Kids" aria-pressed="false">Kids</button><button type="button" data-menu-filter="Adicionais" aria-pressed="false">Adicionais</button><button type="button" data-menu-filter="Bebidas" aria-pressed="false">Bebidas</button><button type="button" data-menu-filter="No iFood" aria-pressed="false">No iFood</button></div>
+        <dialog class="dish-stage" id="prato" aria-labelledby="dish-name">
+          <form method="dialog">
+            <button class="dish-close" autofocus aria-label="Fechar detalhes">
+              ×
+            </button>
+          </form>
+          <div class="dish-detail">
+            <div class="dish-visual">
+              <img
+                src="assets/imagens/menu/0.webp"
+                alt="Experiência Mareyki"
+              />
+            </div>
+            <div class="dish-copy">
+              <p class="eyebrow">Detalhes do cardápio</p>
+              <h2 id="dish-name">Experiência Mareyki</h2>
+              <p class="dish-description">Ceviche Clássico, Chicharrón de Pescado e Causa de Pollo em porções degustação.</p>
+              <strong class="dish-price">R$ 75</strong>
+              <p>
+                <a
+                  class="button"
+                  href="https://www.ifood.com.br/delivery/sorocaba-sp/mareyki-cocina-peruana-jardim-america/1b4f0615-d231-4bf4-acd9-18a382910767"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Ver no iFood ↗</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="dish-controls">
+            <button type="button" data-step="-1" aria-label="Item anterior">
+              ←</button
+            ><span class="dish-count" aria-live="polite"></span
+            ><button type="button" data-step="1" aria-label="Próximo item">
+              →
+            </button>
+          </div>
+        </dialog>
+        <section data-menu-category="Para começar"><h2>Para começar</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/0.webp" data-description="Ceviche Clássico, Chicharrón de Pescado e Causa de Pollo em porções degustação."><img src="assets/imagens/menu/0.webp" alt="" loading="lazy" /><span>Experiência Mareyki<strong>R$ 75</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Palitinhos de queijo envoltos em massa crocante, acompanhados de molho da casa e guacamole."><span>Tequeños<strong>R$ 45</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/7.webp" data-description="Porção de pescado do dia frito, acompanhada de batatas douradas e molho da casa."><img src="assets/imagens/menu/7.webp" alt="" loading="lazy" /><span>Chicharrón de Pescado · M<strong>R$ 45</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/6.webp" data-description="Porção de pescado do dia frito, acompanhada de batatas douradas e molho da casa."><img src="assets/imagens/menu/6.webp" alt="" loading="lazy" /><span>Chicharrón de Pescado · G<strong>R$ 79</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/5.webp" data-description="Porção de camarão frito, acompanhada de batatas douradas e molho da casa."><img src="assets/imagens/menu/5.webp" alt="" loading="lazy" /><span>Chicharrón de Camarão · M<strong>R$ 59</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/4.webp" data-description="Porção de camarão frito, acompanhada de batatas douradas e molho da casa."><img src="assets/imagens/menu/4.webp" alt="" loading="lazy" /><span>Chicharrón de Camarão · G<strong>R$ 89</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Batata prensada e temperada com recheio cremoso de camarão e abacate."><span>Causa de Camarão<strong>R$ 40</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Batata prensada e temperada com recheio cremoso de frango e abacate."><span>Causa de Frango<strong>R$ 38</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Cubos de pescado do dia marinados em caldo cítrico e condimentado, com camarão, lula e mexilhões, batata-doce e milho tostado."><span>Leche de Tigre<strong>R$ 40</strong></span></button></div></section><section data-menu-category="Ceviches"><h2>Ceviches</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/1.webp" data-description="Pescado do dia marinado em limão, pimenta e coentro, acompanhado de milho tostado, cebola e batata-doce aromatizada."><img src="assets/imagens/menu/1.webp" alt="" loading="lazy" /><span>Ceviche Clássico<strong>R$ 56</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/0.webp" data-description="Pescados frescos marinados em limão, pimenta e coentro, com acompanhamentos peruanos."><img src="assets/imagens/menu/0.webp" alt="" loading="lazy" /><span>Ceviche Misto<strong>R$ 68</strong></span></button></div></section><section data-menu-category="Chaufas"><h2>Chaufas</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/10.webp" data-description="Arroz frito peruano salteado na wok com frutos do mar (camarão, lula e mexilhões), pimentão, cebolinha e ovo ao molho de soja."><img src="assets/imagens/menu/10.webp" alt="" loading="lazy" /><span>Chaufa de Mariscos<strong>R$ 48</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/8.webp" data-description="Arroz frito peruano, salteado na wok com carne, cebola, pimentão e ovos ao molho de soja."><img src="assets/imagens/menu/8.webp" alt="" loading="lazy" /><span>Chaufa de Carne<strong>R$ 44</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/9.webp" data-description="Arroz frito peruano, salteado na wok com frango, cebola, pimentão e ovos ao molho de soja."><img src="assets/imagens/menu/9.webp" alt="" loading="lazy" /><span>Chaufa de Frango<strong>R$ 40</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Arroz frito peruano, salteado na wok com frango e carne, cebola, pimentão e ovos ao molho de soja."><span>Chaufa Misto<strong>R$ 44</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Arroz frito peruano, salteado na wok com cebola, pimentão e ovos ao molho de soja. Opção vegetariana."><span>Chaufa Vegetariano<strong>R$ 36</strong></span></button></div></section><section data-menu-category="Salteados"><h2>Salteados</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/19.webp" data-description="Filé mignon salteado na wok em fogo alto com cebola e tomate. Acompanha arroz e batatas douradas."><img src="assets/imagens/menu/19.webp" alt="" loading="lazy" /><span>Lomo Saltado<strong>R$ 58</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Frango salteado na wok em fogo alto com cebola e tomate. Acompanha arroz e batatas douradas."><span>Pollo Saltado<strong>R$ 49</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Frutos do mar salteados na wok em fogo alto com cebola e tomate. Acompanha arroz e batatas douradas."><span>Mariscos Saltados<strong>R$ 56</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/18.webp" data-description="Filé mignon salteado com cebola e tomate, acompanhado de arroz, batatas fritas, ovo e banana frita."><img src="assets/imagens/menu/18.webp" alt="" loading="lazy" /><span>Lomo a lo Pobre<strong>R$ 65</strong></span></button></div></section><section data-menu-category="Tallarín"><h2>Tallarín</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/16.webp" data-description="Macarrão espaguete salteado com frutos do mar ao molho de soja, pimentão, cebolinha e tomate."><img src="assets/imagens/menu/16.webp" alt="" loading="lazy" /><span>Tallarín de Mariscos<strong>R$ 48</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/14.webp" data-description="Macarrão espaguete salteado com carne ao molho de soja, pimentão, cebolinha e tomate."><img src="assets/imagens/menu/14.webp" alt="" loading="lazy" /><span>Tallarín de Carne<strong>R$ 44</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/15.webp" data-description="Macarrão espaguete salteado com frango ao molho de soja, pimentão, cebolinha e tomate."><img src="assets/imagens/menu/15.webp" alt="" loading="lazy" /><span>Tallarín de Frango<strong>R$ 40</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Macarrão espaguete salteado com frango e carne ao molho de soja, pimentão, cebolinha e tomate."><span>Tallarín Misto<strong>R$ 44</strong></span></button></div></section><section data-menu-category="Arroz"><h2>Arroz</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/11.webp" data-description="Arroz cremoso com frutos do mar (camarão, lula e mexilhões), cebola crocante, coentro, ervilhas frescas e um toque de leite de tigre, acompanhado de salada."><img src="assets/imagens/menu/11.webp" alt="" loading="lazy" /><span>Arroz com Mariscos<strong>R$ 56</strong></span></button></div></section><section data-menu-category="Kids"><h2>Kids</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Pescado ou frango empanado acompanhado de batata frita carinha."><span>Kids · Pescado ou Frango<strong>R$ 38</strong></span></button></div></section><section data-menu-category="Adicionais"><h2>Adicionais</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Arroz branco<strong>R$ 8</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Batata doce<strong>R$ 15</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Batata frita<strong>R$ 8</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Batata rústica frita<strong>R$ 9</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Banana da terra frita<strong>R$ 8</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Ovo<strong>R$ 4</strong></span></button></div></section><section data-menu-category="Bebidas"><h2>Bebidas</h2><div class="dish-list"><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Bebida peruana de milho roxo."><span>Chicha Morada<strong>R$ 16</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Refrigerante peruano."><span>Inca Kola<strong>Consulte o atendente</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Cerveja peruana."><span>Cusqueña Long Neck<strong>R$ 16</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Coquetel clássico peruano."><span>Pisco Sour<strong>R$ 45</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description="Drink da casa."><span>Machu Picchu<strong>R$ 45</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Refrigerantes<strong>R$ 8</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="" data-description=""><span>Del Valle lata<strong>R$ 8</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/22.webp" data-description=""><img src="assets/imagens/menu/22.webp" alt="" loading="lazy" /><span>Água com ou sem gás<strong>R$ 6</strong></span></button><button class="dish-choice" type="button" aria-haspopup="dialog" aria-controls="prato" aria-pressed="false" data-image="assets/imagens/menu/30.webp" data-description=""><img src="assets/imagens/menu/30.webp" alt="" loading="lazy" /><span>Sprite Lemon Fresh<strong>R$ 9</strong></span></button></div></section><section data-menu-category="No iFood" id="ifood"><h2>No iFood</h2><p class="ifood-note">Itens e preços do delivery. Os valores são diferentes dos do salão, por isso ficam separados do cardápio acima.</p><div class="ifood-group"><h3>Ceviches</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/0.webp"
+              data-description="Peixe fresco do dia, camarão e lula marinados em limão, pimenta e coentro, com milho tostado."
+            >
+              <img
+                src="assets/imagens/menu/0.webp"
+                alt=""
+                loading="lazy"
+              /><span>Ceviche Mixto<strong>R$ 99,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/1.webp"
+              data-description="Peixe fresco do dia marinado em limão, pimenta e coentro, com milho tostado."
+            >
+              <img
+                src="assets/imagens/menu/1.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Ceviche Clásico de Pescado Personal<strong
+                  >R$ 80,90</strong
+                ></span
+              >
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Combos</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/2.webp"
+              data-description="Fanta 350 ml à escolha e copo colecionável de brinde. Consulte disponibilidade."
+            >
+              <img
+                src="assets/imagens/menu/2.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Combo Halloween · Chaufa<strong
+                  >A partir de R$ 58,90</strong
+                ></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/3.webp"
+              data-description="Fanta 350 ml à escolha e copo colecionável de brinde. Consulte disponibilidade."
+            >
+              <img
+                src="assets/imagens/menu/3.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Combo Halloween · Salteados<strong
+                  >A partir de R$ 77,90</strong
+                ></span
+              >
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Chicharrón</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/4.webp"
+              data-description="Camarão frito com molho da casa."
+            >
+              <img
+                src="assets/imagens/menu/4.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Camarón G<strong>R$ 129,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/5.webp"
+              data-description="Camarão frito com molho da casa."
+            >
+              <img
+                src="assets/imagens/menu/5.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Camarón M<strong>R$ 82,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/6.webp"
+              data-description="Peixe fresco do dia frito com molho da casa."
+            >
+              <img
+                src="assets/imagens/menu/6.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Chicharrón de Pescado G<strong>R$ 109,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/7.webp"
+              data-description="Peixe fresco do dia frito com molho da casa."
+            >
+              <img
+                src="assets/imagens/menu/7.webp"
+                alt=""
+                loading="lazy"
+              /><span>Chicharrón de Pescado M<strong>R$ 59,00</strong></span>
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Arroz</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/8.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/8.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Carne<strong>R$ 63,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/9.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/9.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Frango<strong>R$ 57,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/10.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/10.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Arroz Chaufa de Mariscos<strong>R$ 69,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/11.webp"
+              data-description="Arroz cremoso com frutos do mar, cebola crocante, coentro, páprica, ervilhas e um toque de leite de tigre, acompanhado de salada."
+            >
+              <img
+                src="assets/imagens/menu/11.webp"
+                alt=""
+                loading="lazy"
+              /><span>Arroz com Mariscos<strong>R$ 80,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Arroz Chaufa Misto<strong>R$ 63,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Chaufa Vegetariano<strong>R$ 51,90</strong></span>
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Tallarín</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/14.webp"
+              data-description="Macarrão com carne ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="assets/imagens/menu/14.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Carne<strong>R$ 63,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/15.webp"
+              data-description="Macarrão com frango ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="assets/imagens/menu/15.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Frango<strong>R$ 57,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/16.webp"
+              data-description="Macarrão com frutos do mar ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <img
+                src="assets/imagens/menu/16.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Tallarín Saltado de Mariscos<strong>R$ 69,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description="Macarrão com carne e frango ao molho de soja, com pimentão, cebolinha e tomate."
+            >
+              <span>Tallarín Saltado Misto<strong>R$ 63,90</strong></span>
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Executivos</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/18.webp"
+              data-description="Filé mignon salteado com cebola e tomate, acompanhado de arroz, batata, ovo frito e banana."
+            >
+              <img
+                src="assets/imagens/menu/18.webp"
+                alt=""
+                loading="lazy"
+              /><span>Lomo A Lo Pobre<strong>R$ 93,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/19.webp"
+              data-description="Filé mignon salteado na wok com cebola e tomate, acompanhado de batatas douradas."
+            >
+              <img
+                src="assets/imagens/menu/19.webp"
+                alt=""
+                loading="lazy"
+              /><span>Lomo Saltado<strong>R$ 83,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Pollo Saltado<strong>R$ 70,90</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image=""
+              data-description=""
+            >
+              <span>Mariscos Saltado<strong>R$ 80,90</strong></span>
+            </button>
+          </div>
+        </div>
+        <div class="ifood-group"><h3>Bebidas</h3>
+          <div class="dish-list">
+            <button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/22.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/22.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Água mineral com gás 500 ml<strong>R$ 8,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/23.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/23.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Água mineral Crystal sem gás 500 ml<strong
+                  >R$ 8,90</strong
+                ></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/24.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/24.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Fanta Laranja 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/25.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/25.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Schweppes Citrus 350 ml<strong>R$ 8,93</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/26.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/26.webp"
+                alt=""
+                loading="lazy"
+              /><span>Sprite 350 ml<strong>R$ 9,52</strong></span></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/27.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/27.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Schweppes Tônica 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/28.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/28.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Coca-Cola Zero 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/29.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/29.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Coca-Cola Original 350 ml<strong>R$ 11,90</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/30.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/30.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Sprite Lemon Fresh 600 ml<strong>R$ 10,32</strong></span
+              ></button
+            ><button
+              class="dish-choice"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="prato"
+              aria-pressed="false"
+              data-image="assets/imagens/menu/31.webp"
+              data-description=""
+            >
+              <img
+                src="assets/imagens/menu/31.webp"
+                alt=""
+                loading="lazy"
+              /><span
+                >Fanta Ghost Face Punch 350 ml<strong>R$ 11,90</strong></span
+              >
+            </button>
+          </div>
+        </div>
+      </section></div>
+    </main>
+    <footer class="restaurant-footer">
+      <div class="wrap footer-row">
+        <div>
+          <a class="footer-brand" href="index.html">Mareyki Cocina Peruana</a>
+          <address>
+            R. João Wagner Wey, 1652 · Jardim América<br />Sorocaba, SP ·
+            18046-525
+          </address>
+        </div>
+        <nav aria-label="Rodapé">
+          <a href="cardapio.html">Cardápio</a
+          ><a href="index.html#contato">Como chegar</a
+          ><a
+            href="https://www.instagram.com/mareykicocinaperuana/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram ↗</a
+          >
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
         aria-controls="navegacao"
         hidden
       >
